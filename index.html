@@ -4,168 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Av. Işın Nağme Evgin | İstanbul Hukuk Bürosu</title>
-    <meta name="description" content="20 yılı aşkın tecrübesiyle İstanbul'da aile, ticaret ve ceza hukuku alanlarında profesyonel hukuki danışmanlık hizmetleri.">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .hero-section {
-            position: relative;
-            height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('images/courthouse.jpg') center/cover;
-            display: flex;
-            align-items: center;
-            color: #fff;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        .cta-buttons .btn {
-            margin: 0 10px;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 500;
-        }
-
-        .stats-section {
-            background: #f8f9fa;
-            padding: 80px 0;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .expertise-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .expertise-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .expertise-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .testimonial-section {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/law-office.jpg') center/cover;
-            color: #fff;
-            padding: 100px 0;
-        }
-
-        .testimonial-card {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .client-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .blog-preview {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .blog-preview img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .blog-content {
-            padding: 20px;
-        }
-
-        .contact-cta {
-            background: var(--primary-color);
-            color: #fff;
-            padding: 80px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-    <div class="top-bar py-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="contact-info">
-                        <span class="mr-4"><i class="fas fa-phone-alt mr-2"></i>+90 555 123 4567</span>
-                        <span><i class="far fa-envelope mr-2"></i>info@evginhukuk.com</span>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <span><i class="fas fa-phone"></i> +90 555 123 4567</span>
+                            <span><i class="fas fa-envelope"></i> info@evginhukuk.com</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 text-right">
-                    <div class="social-icons">
-                        <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                    <div class="col-md-6 text-right">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Evgin Hukuk" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practice-areas.html">Uzmanlık Alanları</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
-                </ul>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1>Av. Işın Nağme Evgin</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practice-areas.html">Uzmanlık Alanları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="attorneys.html">Ekibimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -174,8 +74,8 @@
             <h1>Hukuki Haklarınız İçin Güvenilir Çözüm Ortağınız</h1>
             <p class="lead mb-4">20 yılı aşkın tecrübemizle, karmaşık hukuki süreçlerde sizin yanınızdayız.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Randevu Alın</a>
-                <a href="about.html" class="btn btn-outline-light">Daha Fazla Bilgi</a>
+                <a href="contact.html" class="btn btn-primary btn-lg">Randevu Alın</a>
+                <a href="about.html" class="btn btn-light">Daha Fazla Bilgi</a>
             </div>
         </div>
     </div>
@@ -225,7 +125,7 @@
                     </div>
                     <h3>Aile Hukuku</h3>
                     <p>Boşanma, nafaka, velayet ve miras davalarında uzman hukuki danışmanlık.</p>
-                    <a href="practice-areas.html#family-law" class="btn btn-link">Detaylı Bilgi →</a>
+                    <a href="practice-areas.html#family-law" class="read-more">Ayrıntılı Bilgi</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -235,7 +135,7 @@
                     </div>
                     <h3>Ticaret Hukuku</h3>
                     <p>Şirket kurulumları, ticari anlaşmazlıklar ve iş hukuku konularında destek.</p>
-                    <a href="practice-areas.html#commercial-law" class="btn btn-link">Detaylı Bilgi →</a>
+                    <a href="practice-areas.html#commercial-law" class="read-more">Ayrıntılı Bilgi</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
@@ -245,7 +145,7 @@
                     </div>
                     <h3>Ceza Hukuku</h3>
                     <p>Ceza davalarında savunma ve hukuki danışmanlık hizmetleri.</p>
-                    <a href="practice-areas.html#criminal-law" class="btn btn-link">Detaylı Bilgi →</a>
+                    <a href="practice-areas.html#criminal-law" class="read-more">Ayrıntılı Bilgi</a>
                 </div>
             </div>
         </div>
@@ -329,34 +229,56 @@
     <div class="container">
         <h2 class="mb-4">Hukuki Danışmanlık İçin Bize Ulaşın</h2>
         <p class="mb-4">İlk görüşme ücretsizdir. Hemen randevu alın, hukuki sorunlarınızı birlikte çözelim.</p>
-        <a href="contact.html" class="btn btn-outline-light btn-lg">Randevu Alın</a>
+        <a href="contact.html" class="btn btn-primary btn-lg">Randevu Alın</a>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="site-footer bg-dark text-light py-5">
+<footer class="site-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h3>Av. Işın Nağme Evgin</h3>
-                <p>Profesyonel hukuki danışmanlık ve dava takibi hizmetleri.</p>
-                <div class="social-icons mt-3">
-                    <a href="#" class="mr-3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
+                <div class="footer-widget">
+                    <h3>Av. Işın Nağme Evgin</h3>
+                    <p>Profesyonel hukuki danışmanlık ve dava takibi hizmetleri sunuyoruz. Hukuki sorunlarınızda yanınızdayız.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <h3>İletişim</h3>
-                <p><i class="fas fa-map-marker-alt mr-2"></i>Bağdat Caddesi No:123, Kadıköy, İstanbul</p>
-                <p><i class="fas fa-phone-alt mr-2"></i>+90 555 123 4567</p>
-                <p><i class="far fa-envelope mr-2"></i>info@evginhukuk.com</p>
+                <div class="footer-widget">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımda</a></li>
+                        <li><a href="practice-areas.html">Uzmanlık Alanları</a></li>
+                        <li><a href="attorneys.html">Ekibimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-4">
-                <h3>Çalışma Saatleri</h3>
-                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p>Cumartesi: 10:00 - 14:00</p>
-                <p>Pazar: Kapalı</p>
+                <div class="footer-widget">
+                    <h3>Çalışma Saatleri</h3>
+                    <ul class="working-hours">
+                        <li>Pazartesi - Cuma: <span>09:00 - 18:00</span></li>
+                        <li>Cumartesi: <span>10:00 - 14:00</span></li>
+                        <li>Pazar: <span>Kapalı</span></li>
+                    </ul>
+                    <p class="mt-3">Randevu almak için lütfen iletişime geçin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Av. Işın Nağme Evgin. Tüm Hakları Saklıdır.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -372,10 +294,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 <script src="js/main.js"></script>
 </body>
 </html>

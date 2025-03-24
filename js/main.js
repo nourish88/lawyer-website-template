@@ -1,6 +1,27 @@
 (function($) {
     'use strict';
     
+    // Handle page transitions
+    $('a').not('[href^="#"]').not('[target="_blank"]').not('[href^="mailto"]').not('[href^="tel"]').click(function(e) {
+        var href = $(this).attr('href');
+        
+        // Only handle internal links
+        if (href && href.indexOf('http') !== 0) {
+            e.preventDefault();
+            
+            $('body').addClass('page-transitioning');
+            
+            setTimeout(function() {
+                window.location.href = href;
+            }, 300);
+        }
+    });
+    
+    // Handle page load
+    $(window).on('load', function() {
+        $('body').removeClass('page-transitioning');
+    });
+
     // Smooth scrolling for anchor links
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
         if (
